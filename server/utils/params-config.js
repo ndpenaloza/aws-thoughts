@@ -5,7 +5,8 @@ const params = fileName => {
   const fileType = myFile[myFile.length - 1];
 
   const imageParams = {
-    Bucket: '<My_Bucket_Name>',
+    // Bucket: '<My_Bucket_Name>',
+    Bucket: 'user-images-43b36896-28a4-400b-9d67-e0dc12c44d5c',
     Key: `${uuidv4()}.${fileType}`,
     Body: fileName.buffer
   };
